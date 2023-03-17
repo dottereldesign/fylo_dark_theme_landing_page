@@ -101,3 +101,77 @@ select {
   font-weight: inherit;
   font-size: inherit;
 }
+
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 16px 24px 16px;
+  background-color: var(--clr-primary-100);
+}
+
+header img {
+  width: 80px;
+  height: 24px;
+}
+
+header nav {
+  color: var(--clr-neutral-100);
+  font-family: var(--ff-primary-100);
+  font-size: var(--fs-400);
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+}
+
+header li:nth-child(2) {
+  padding: 0 16px;
+}
+
+/* main */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--clr-primary-100);
+}
+
+h1 {
+  color: var(--clr-neutral-100);
+  font-family: var(--ff-primary-100);
+  font-size: var(--fs-700);
+  font-weight: var(--fw-semi-bold);
+  text-align: center;
+  padding: 0 16px;
+}
+
+main p {
+  color: var(--clr-neutral-100);
+  font-family: var(--ff-primary-100);
+  font-size: var(--fs-500);
+  font-weight: var(--fw-regular);
+  text-align: center;
+  padding: 0 16px;
+  margin-top: 24px;
+}
+
+main a {
+  text-decoration: none;
+}
+
+.hero_btn {
+  background-color: var(--clr-accent-100);
+  border-radius: 24px;
+  width: 240px;
+  height: 48px;
+  font-weight: var(--fw-semi-bold);
+  line-height: 3.5;
+  font-size: var(--fs-400);
+  margin-top: 32px;
+  padding: 0;
+}
+
+/* feature - section */
