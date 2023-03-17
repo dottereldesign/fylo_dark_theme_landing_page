@@ -219,7 +219,7 @@ main a {
   color: var(--clr-neutral-100);
   font-family: var(--ff-primary-100);
   font-size: var(--fs-500);
-  font-weight: var(--fw-regular);
+  font-weight: var(--fw-light);
   margin-top: 16px;
 }
 
@@ -248,7 +248,7 @@ main a {
   color: var(--clr-neutral-100);
   font-family: var(--ff-primary-100);
   font-size: var(--fs-500);
-  font-weight: var(--fw-regular);
+  font-weight: var(--fw-light);
   margin-top: 16px;
 }
 
@@ -281,4 +281,54 @@ main a {
   align-items: center;
   background-color: var(--clr-primary-200);
   padding: 128px 16px 0 16px;
+}
+
+.testimonial article {
+  background-color: var(--clr-primary-400);
+  color: var(--clr-neutral-100);
+  padding: 24px;
+  font-family: var(--ff-primary-100);
+  border-radius: 4px;
+}
+
+.testimonial article:last-child {
+  margin-bottom: 128px;
+}
+
+.testimonial article:not(first-child) {
+  margin-top: 32px;
+}
+
+.testimonial_customer {
+  display: flex;
+  margin-top: 16px;
+  align-items: center;
+}
+
+.testimonial img {
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  margin-right: 12px;
+}
+
+.testimonial p:first-child {
+  color: var(--clr-neutral-100);
+  font-family: var(--ff-primary-100);
+  font-size: var(--fs-500);
+  font-weight: var(--fw-light);
+}
+
+.testimonial h3 {
+  color: var(--clr-neutral-100);
+  font-family: var(--ff-primary-100);
+  font-size: var(--fs-400);
+  font-weight: var(--fw-semi-bold);
+}
+
+.testimonial_role {
+  color: var(--clr-neutral-100);
+  font-family: var(--ff-primary-100);
+  font-size: var(--fs-400);
+  font-weight: var(--fw-regular);
 }
