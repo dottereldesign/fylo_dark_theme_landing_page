@@ -622,6 +622,8 @@ main a {
   align-items: center;
   background-color: var(--clr-primary-200);
   padding: 0 16px;
+  width: min(100%, 863px);
+  margin: 0 auto;
 }
 
 .access h2 {
@@ -654,12 +656,12 @@ main a {
   font-family: var(--ff-primary-100);
   font-size: var(--fs-500);
   font-weight: var(--fw-semi-bold);
-  background-color: var(--clr-accent-100);
+  background-color: var(--clr-accent-200);
   border-radius: 24px;
   width: 240px;
   height: 48px;
   font-weight: var(--fw-semi-bold);
-  line-height: 3.5;
+  line-height: 3;
   font-size: var(--fs-400);
   padding: 0;
   text-align: center;
