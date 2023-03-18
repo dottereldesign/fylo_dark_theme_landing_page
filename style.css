@@ -105,6 +105,10 @@ select {
   font-size: inherit;
 }
 
+body {
+  background-color: var(--clr-primary-200);
+}
+
 /* header */
 header {
   display: flex;
@@ -112,6 +116,11 @@ header {
   align-items: center;
   padding: 16px 16px 40px 16px;
   background-color: var(--clr-primary-200);
+  margin: 0 auto;
+}
+
+header {
+  width: min(100%, 1110px);
 }
 
 header a {
@@ -159,6 +168,7 @@ h1 {
   font-weight: var(--fw-semi-bold);
   text-align: center;
   padding: 0 16px;
+  width: min(100%, 734px);
 }
 
 main p {
@@ -169,6 +179,7 @@ main p {
   text-align: center;
   padding: 0 16px;
   margin-top: 24px;
+  width: min(100%, 589px);
 }
 
 main a {
@@ -176,7 +187,7 @@ main a {
 }
 
 .hero_btn {
-  background-color: var(--clr-accent-100);
+  background-color: var(--clr-accent-200);
   border-radius: 24px;
   width: 240px;
   height: 48px;
@@ -184,6 +195,36 @@ main a {
   line-height: 3.5;
   font-size: var(--fs-400);
   padding: 0;
+}
+
+.hero_btn:hover {
+  background-color: var(--clr-accent-100);
+}
+
+@media (min-width: 420px) {
+  .hero_btn {
+    line-height: 3.2;
+  }
+}
+
+@media (min-width: 780px) {
+  .hero_btn {
+    line-height: 3;
+  }
+}
+
+@media (min-width: 500px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--clr-primary-200);
+    background-image: url("images/illustration-intro.png");
+    background-repeat: no-repeat;
+    background-position: center top 0;
+    background-size: 450px 333px;
+    padding-top: 360px;
+  }
 }
 
 /* feature - section */
