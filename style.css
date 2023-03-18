@@ -686,6 +686,7 @@ footer img {
 .footer_contact-location {
   display: flex;
   margin-top: 32px;
+  width: min(100%, 350px);
 }
 
 .footer_contact-location i {
@@ -768,4 +769,119 @@ footer li:not(:first-child) {
 
 .footer_icon-container a:nth-child(2) {
   margin: 0 16px;
+}
+
+@media (min-width: 1110px) {
+  footer {
+    background-color: var(--clr-primary-200);
+    padding: 96px 16px 64px 16px;
+    color: var(--clr-neutral-100);
+  }
+
+  footer section {
+    width: min(100%, 1110px);
+    margin: 32px auto 0 auto;
+  }
+
+  .footer_row-2 {
+    display: grid;
+    grid-template-columns: 379px repeat(4, 1fr);
+    gap: 16px;
+    width: min(100%, 1110px);
+    margin: 32px auto 0 auto;
+  }
+
+  footer img {
+    width: 108px;
+    height: 31px;
+  }
+
+  .footer_contact-location {
+    display: flex;
+    margin-top: 0;
+    padding-right: 32px;
+  }
+
+  .footer_contact-location i {
+    margin: 5px 16px 0 0;
+  }
+
+  .footer_contact-location p {
+    color: var(--clr-neutral-100);
+    font-family: var(--ff-primary-100);
+    font-size: var(--fs-500);
+    font-weight: var(--fw-light);
+  }
+
+  .footer_contact-phone {
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  .footer_contact-phone i {
+    margin: 2px 16px 0 0;
+  }
+
+  .footer_contact-phone p {
+    color: var(--clr-neutral-100);
+    font-family: var(--ff-primary-100);
+    font-size: var(--fs-500);
+    font-weight: var(--fw-light);
+  }
+
+  .footer_contact-email {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+  }
+
+  .footer_contact-email i {
+    margin: 2px 16px 0 0;
+  }
+
+  .footer_contact-email p {
+    color: var(--clr-neutral-100);
+    font-family: var(--ff-primary-100);
+    font-size: var(--fs-500);
+    font-weight: var(--fw-light);
+  }
+
+  footer ul {
+    list-style: none;
+    padding: 0;
+    color: var(--clr-neutral-100);
+    font-family: var(--ff-primary-100);
+    font-size: var(--fs-400);
+    font-weight: var(--fw-light);
+    margin-top: 0;
+    padding-left: 64px;
+  }
+
+  footer li:not(:first-child) {
+    margin-top: 8px;
+  }
+
+  .footer_icon-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+  }
+
+  .footer_icon-container a {
+    color: var(--clr-neutral-100);
+    border: 1px solid var(--clr-neutral-100);
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    text-decoration: none;
+  }
+
+  .footer_icon-container a:nth-child(2) {
+    margin: 0 16px;
+  }
 }
